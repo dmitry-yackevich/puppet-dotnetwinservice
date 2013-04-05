@@ -1,4 +1,3 @@
-
 A puppet module for allowing installation of Microsoft .Net Windows services using InstallUtil.exe
 
 ##Installation
@@ -17,7 +16,7 @@ If you'd like to install this module from source, please simply clone a copy int
 
 ##Examples
 
-To install a Microsoft .Net version 3 Windows Service:
+To install a Microsoft .Net version 2 Windows Service:
 
 Ensure your .Net Win Service has a service installer and service process installer class -
 See [How to: Add Installers to Your Service Application] (http://msdn.microsoft.com/en-gb/library/ddhy0byf.aspx)
@@ -28,6 +27,8 @@ See [How to: Add Installers to Your Service Application] (http://msdn.microsoft.
         sixtyfourbit  => false,
         path          => 'C:\Program Files(x86)\MyWinService\MyWinService.exe',
     }
+
+Note:  The type title must match the Windows Service short name
 
 ##License
 
